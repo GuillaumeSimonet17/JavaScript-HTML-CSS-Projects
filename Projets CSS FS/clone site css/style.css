@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+*:focus {
+    outline: none;
+}
+
+body {
+    height: 30000px;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: black;
+    z-index: 1;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li {
+    cursor: pointer;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    height: 15px;
+    width: 250px;
+    position: relative;
+    border-radius: 30px;
+    border: 4px solid transparent;
+    background: black;
+    background-clip: padding-box;
+    padding: 10px;
+}
+
+.search-bar input {
+    background: black;
+    border: none;
+    margin: 17px;
+    margin-right: 68px;
+    align-content: center;
+    color: white;
+}
+
+.search-bar :after{
+    content: '';
+    position: absolute;
+    inset: -2px;
+    display: block;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(231,139,0,1) 0%, rgba(187,0,0,0.9609831871345029) 35%, rgba(198,0,148,1) 51%, rgba(7,48,133,1) 79%, rgba(78,0,255,1) 90%, rgba(8,0,24,1) 99%);
+    z-index: -1;
+}
+
+.search-bar span {
+    background: linear-gradient(90deg, rgba(231,139,0,1) 0%, rgba(187,0,0,0.9609831871345029) 35%, rgba(198,0,148,1) 51%, rgba(7,48,133,1) 79%, rgba(78,0,255,1) 90%, rgba(8,0,24,1) 99%);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+nav .logo span{
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(90deg, rgba(231,139,0,1) 0%, rgba(187,0,0,0.9609831871345029) 35%, rgba(198,0,148,1) 51%, rgba(7,48,133,1) 79%, rgba(78,0,255,1) 90%, rgba(8,0,24,1) 99%);
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.hero{
+    margin-bottom: 200px;
+}
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.hero .container h1{
+    font-size: 60px;
+    font-weight: 900!important;
+    letter-spacing: 0.07em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.hero .container > .right .perso-wrapper{
+    position: relative;
+}
+.hero .container > .right .perso-wrapper::after{
+    content: "";
+    background: linear-gradient(90deg, rgba(231,139,0,1) 0%, rgba(187,0,0,0.9609831871345029) 35%, rgba(198,0,148,1) 51%, rgba(7,48,133,1) 79%, rgba(78,0,255,1) 90%, rgba(8,0,24,1) 99%);
+    position: absolute;
+    bottom: -250px;
+    right: 0px;
+    display: block;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    z-index: -10;
+}
+.hero .container > .right .perso-wrapper span{
+    margin: 5px;
+}
+img{
+    width: 400px;
+    position: absolute;
+    top: -150px;
+    right: 200px;
+    z-index: 2;
+}
+
+.stats{
+    background: rgba(255, 255, 255, 0.315);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 130px;
+    width: 220px;
+    justify-content: center;
+    font-size: 0.8em;
+    display: flex;
+}
+
+.stats strong{
+    font-size: 1.2em;
+    margin: 5px;
+}
+.stats > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .container .nft{
+    background: linear-gradient(90deg, rgba(231,139,0,1) 0%, rgba(187,0,0,0.9609831871345029) 35%, rgba(198,0,148,1) 51%, rgba(7,48,133,1) 79%, rgba(78,0,255,1) 90%, rgba(8,0,24,1) 99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.btn {
+    height: 47px;
+    width: 150px;
+    position: relative;
+    padding: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(231,139,0,1) 0%, rgba(187,0,0,0.9609831871345029) 35%, rgba(198,0,148,1) 51%, rgba(7,48,133,1) 79%, rgba(78,0,255,1) 90%, rgba(8,0,24,1) 99%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn .btn--border{
+    padding: 0;
+    background: black;
+}
+
+.btn--small{
+    margin: 5px;
+    height: 30px;
+    width: 100px;
+    font-weight: 800;
+}
+
+ 
+.btn--white{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid white;
+    color: white;
+    width: 100px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    height: 23px;
+    padding-top: 6px;
+    font-weight: 800;
+}
+
+.ctas{
+    display: flex;
+    gap: 22px;
+    margin-bottom: 32px;
+}
+
+.figures{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.figures li{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border-left: 1px solid white;
+    align-items: left;
+    text-align: left;
+    padding-left: 50px;
+}
+li:first-child{
+    border: none;
+    padding-left: 0;
+}
+
+li strong{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.achievement{
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.achievement-items{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    color: rgb(172, 172, 172);
+
+}
+
+.achievement-items .left {
+
+
+    background: linear-gradient(90deg, rgba(231,139,0,1) 0%, rgba(187,0,0,0.9609831871345029) 35%, rgba(198,0,148,1) 51%, rgba(7,48,133,1) 79%, rgba(78,0,255,1) 90%, rgba(8,0,24,1) 99%);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 1024px) {
+    
+    img{
+        top: -800px;
+        transition: 3s ease;
+    }
+}
+
+@media only screen and (max-width: 786) {
+  
+}

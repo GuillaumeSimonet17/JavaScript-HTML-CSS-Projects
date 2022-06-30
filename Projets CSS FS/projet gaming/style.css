@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: white;
+    color: black;
+
+}
+
+nav{
+    width: 80%;
+}
+
+ul{
+    display: flex;
+    padding: 0;
+    font-size: 0.8em;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+nav > ul > li{
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top: 5px solid transparent;
+    padding: 20px 0 ;
+    margin-bottom: 5px;
+}
+nav >ul > li:not(:last-child):hover{
+    border-top: 5px solid rgb(132, 0, 127);
+    color: rgb(132, 0, 127);
+}
+
+nav > ul > li:last-child{
+    background-color: rgb(223, 223, 223);
+    border-radius: 50px;
+    margin-top: 21px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    height: 20px;
+    cursor: pointer;
+} 
+
+
+
+/* ***************************************** */
+
+header{
+    background: url(./assets/img/bg.jpg) fixed center/cover ;
+    height: 480px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+header img {
+    margin-top: 50px;
+    width: 550px;
+}
+header h2 {
+    font-size: 1.2em;
+    margin-top: 25px;
+    color: white;
+}
+header button{
+    letter-spacing: 2px;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    cursor: pointer;  
+    transition: 300ms ease;
+
+}
+
+header button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ***************************************** */
+
+
+.header-txt{
+    line-height: 28px;
+    width: 80%;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ***************************************** */
+
+
+.en-savoir-plus{
+    background-color: black;
+    color: white;
+}
+.en-savoir-plus-container{
+    display: flex;
+    text-align: center;  
+    width: 80%;
+}
+
+.logo{
+    padding-top: 70px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px 100px 1fr;
+    height: 330px;
+    width: 35%;
+}
+
+.logo h4{
+    margin: 20px;
+    font-weight: bold;
+}
+.logo p{
+    font-size: 0.9em;
+    margin-top: 10px;
+    width: 90%;
+}
+.logo span{
+    font-size: 0.9em;
+    padding: 5px 40px;
+    border: 1px solid white;
+    height: 20px;
+    cursor: pointer;
+    transition: 300ms ease;
+} 
+
+.logo span:hover{
+    background-color: white;
+    color: black;
+}
+
+/* ***************************************** */
+
+.news{
+    background-color: rgb(228, 228, 228);
+    padding: 70px;
+}
+
+
+.header-news{
+    padding: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.titre{
+    line-height: 30px;
+    width: 100%;
+    text-align: left;
+    align-items: left;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.titre h5{
+    margin: 0;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+}
+.btn-news{
+    margin: 0 auto;
+}
+.btn-news button {
+    margin-top: 40px;
+    border: 1px solid  black;
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+.btn-news button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+.main-news-container{
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+}
+
+.main-news-container > div {
+    position: relative;
+    width: 25%;
+}
+
+.img-news img{
+    object-fit: cover;
+    box-shadow: rgba(29, 29, 29, 0.67) 0px 7px 29px 0px;
+    width: 100%;
+}
+
+
+.article h5{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.main-news-container p{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: left;
+    line-height: 25px;
+}
+
+
+.article .link{
+    position: absolute;
+    bottom: 0;
+}
+
+a{
+    text-decoration:none; 
+    font-size: 0.9em;
+}
+a:hover{
+    color: rgb(197, 148, 0);
+}
+
+
+
+/* 
+.main-news-container{
+    margin-top: 30px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    border: 3px solid red;
+
+}
+
+.main-news-container > div{
+    position: relative;
+}
+
+.img-news img{
+    object-fit: cover;
+    width: 100%;
+}
+ */
+
+
+
+
+
+
+
+
+
+/* ***************************************** */
+
+
+.liens{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.list{
+    width: 70%;
+    margin-bottom: 20px; 
+}
+.list ul{
+    display: block;
+    line-height: 30px; 
+}
+
+.list a{
+    text-decoration:none; 
+    font-size: 0.9em;
+}
+.list h5:not(.suivre){
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+.p-parent{
+    line-height: 25px;
+    font-size: 0.8em;
+}
+.p-esp{
+    margin-top: 20px;
+    color: rgb(132, 0, 127) ;
+    font-weight: bold;
+}
+
+.mail{
+    margin-bottom: 20px;
+    
+}
+
+.division{
+    border: 0.8px solid rgb(227, 227, 227);
+    width: 70%;
+}
+.suivre{
+    margin-bottom: 10px;
+}
+.icon{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+.presse-logo{
+    background-color: rgb(255, 255, 255);
+    padding: 70px;
+}
+
+
+.presse-logo-container{
+    padding: 20px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.presse-logo img {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+.partenaires{
+    background: black;
+    color: white;
+    text-align: center;
+}
+.partenaires ul{
+    display: flex;
+    padding-bottom: 50px;
+    width: 70%;
+}
+.partenaires ul li{
+    justify-content: space-around;
+}
+.partenaires h5{
+    padding: 20px;
+    font-size: 1.1em;
+}

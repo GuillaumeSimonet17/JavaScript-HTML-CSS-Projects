@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+
+}
+
+$color1: rgb(181, 218, 255);
+
+body{
+    background: black;
+    height: 200vh;
+    // overflow: hidden;
+
+}
+header{
+
+    width: 100%;
+    display: flex;
+    background: black;
+    overflow: hidden;
+    .panneau{
+        height: 100vh;
+        // border: 3px solid blue;
+        width: 25%;
+        transition: 500ms ease-in-out;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        h3{
+            position: absolute;
+            opacity: 0;
+            transition: 500ms ease-in-out;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 3.5em;
+            text-transform: uppercase;
+            &:hover{
+                transition: 2s ease;
+                transform: scale(1.2);
+                
+            }
+            a{
+                text-decoration: none;
+                scroll-behavior: smooth;
+            
+            }
+        
+        }
+        &:hover{
+            width: 50%;
+            h3{
+                opacity: 1;
+            }
+        }
+    
+    }
+    #i1{
+        background: url(./animal-gd1109b5de_1920.jpg) center/cover;
+    }
+    #i2{
+        background: url(./jellyfish-gc4d70d5da_1920.jpg) center/cover;
+    
+        
+    }
+    #i3{
+        background: url(./jellyfish-g055376dc5_1920.jpg) center/cover;
+       
+    }
+    #i4{
+        background: url(./sea-g6c7fa4a62_1920.jpg) center/cover;
+      
+    }
+}
+
+
+main{
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+   
+    i{
+        cursor: pointer;
+        position: absolute;
+        color:$color1;
+        font-size: 2em;
+        top: 1.25%;
+        left: 95%;
+        transition: .2s ease;
+        &:hover{
+            transform: scale(1.04);
+        }
+    
+    }
+    
+    .page{
+        padding: 100px;
+        color: white;
+        width: 100%;
+        display: none;
+            span{
+                width: 100px;
+                height: 100px;
+                background: $color1;
+                display: block;
+                position: absolute;
+                z-index: -1;
+                transform: rotateZ(-100deg);
+                // left: 22.5%;
+                left: 4.7%;
+                top: 4%;
+
+                
+            }
+            h3{
+                font-size: 4em;
+                z-index: 2000;
+            }
+            h3::first-letter{
+                color: black;
+            }
+            p{
+                margin-top: 50px;
+                text-align: justify;
+                &::selection{
+                    background-color: $color1;
+                    color: black;
+                }
+            }
+            &.active{
+                display: block;
+            }
+    }
+
+
+
+
+    button{
+        padding: 10px 25px;
+        width: 150px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        color: $color1;
+        background: transparent;
+        font-size: 1.1em;
+        border: 2px solid $color1;
+    }
+    #btn-var{
+        background: $color1;
+        color: black;
+        border: 2px solid transparent;
+        margin-bottom: 34px;
+        transition: 0.1s ease;
+        // &:hover{
+        //     // border: 2px solid $color1;
+        //     // background: transparent;
+        //     // color: $color1;
+
+        // }
+        &:active{
+            transform: scale(1.025);
+        }
+    }
+    .container{
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        max-width: 1000px;
+        height: 400px;
+        display: flex;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 200px;
+
+        #login, #signup{
+           margin-bottom: 60px;
+           &:hover{
+               background: $color1;
+               color: black;
+           }
+        }
+
+        .left{
+            width: 50%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        .right{
+            width: 50%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+    }
+    .form{
+        transition: 0.4s ease-in-out;
+        position: absolute;
+        left: 2%;
+        top: -7%;
+        width: 35%;
+        max-width: 500px;
+        height: 400px;
+        background: rgb(255, 255, 255);  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .form-container{
+            width: 90%;
+            height: 80%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            input{
+                font-size: 1.1em;
+                display: flex;
+                border: none;
+                border-bottom: 1px solid rgb(180, 180, 180) ;
+                width: 90%;
+                padding: 10px 2px;
+                outline-style: none;
+                margin-top: 30px;
+                color: black;
+            }
+            
+        }
+    }
+}
+    
+    
+
+
+// bubles
+
+.bubble {
+    position: absolute;
+    border-radius: 300px;
+    opacity: 0;
+    z-index: 1000;
+    animation: anim 30s forwards;
+    // color: white;
+    // background: white;
+    // width: 100px;
+    // height: 100px;
+}
+@keyframes anim {
+to {
+    top: -250px;
+    left: var(--left);
+    right: var(--right);
+    opacity: 0.3;
+    
+}
+}

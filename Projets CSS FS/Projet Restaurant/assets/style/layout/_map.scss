@@ -1,0 +1,56 @@
+.map{
+    background: url(../../../assets/img/gmap.jpg) center/cover;
+    height: 500px;
+    position: relative;
+}
+
+.paragraph-ceo{
+    position: absolute;
+    z-index: 6;
+    width: 70%;
+    height: 500px;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    top: -300px;
+    display: flex;
+    
+    img{
+        position: absolute;
+        width: 100px;
+        left: 50%;
+        top: -50px;
+        transform: translate(-50%);
+        border-radius: 50%;
+    }
+    p{
+        font-size: 1.4em;
+        line-height: 40px;
+        @media screen and (max-width: 950px) {
+            font-size: 1em;
+            line-height: 30px;
+            margin-top: 20px;
+        }
+    }
+    h5{
+        margin-top: 50px;
+        font-size: 2em;
+    }
+    h6{
+        color: $color1;
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+    .paragraph-ceo-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        
+        .par-ceo-cont2{
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: #282937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+    /* transition: transform 0.4s cubic-bezier(0.23, 1.83, 0.42, 1.19); */
+    letter-spacing: 0.05em;
+
+}
+.box:hover{
+    transform: scale(1.3);
+    letter-spacing: 0.3em;
+}
+.box p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+
+}
+
+
+.circle{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+    animation: 1s linear infinite alternate boxMagic,
+                4s linear infinite spinning;
+    padding-top: 340px;
+}
+
+@keyframes boxMagic{
+    from{
+        box-shadow:
+        0 0 0 #feac5e,
+        0 0 0 #c779d0,
+        0 0 0 #4bc0c8,
+        0 0 0 #42db75;
+    }
+    to{
+        box-shadow:
+        0 -10px 0 #feac5e,
+        -10px 0 0 #c779d0,
+        0 10px 0 #4bc0c8,
+        10px 0 0 #42db75;
+
+    }
+}
+
+@keyframes spinning{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

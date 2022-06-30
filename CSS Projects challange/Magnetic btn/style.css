@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .btn {
+  position: relative;
+  text-align: center;
+}
+
+body .btn span {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  width: 240px;
+  padding: 18px 0;
+  margin: 35px;
+  border-radius: 8px;
+}
+
+body .orange span {
+  background: -webkit-gradient(linear, left top, right top, from(#ff7200), color-stop(80%, #ffbe56));
+  background: linear-gradient(90deg, #ff7200 0%, #ffbe56 80%);
+}
+
+body .blue span {
+  background: -webkit-gradient(linear, left top, right top, from(#005eff), color-stop(80%, #568eff));
+  background: linear-gradient(90deg, #005eff 0%, #568eff 80%);
+}
+
+body .green span {
+  background: -webkit-gradient(linear, left top, right top, from(#15b600), color-stop(80%, #56ff78));
+  background: linear-gradient(90deg, #15b600 0%, #56ff78 80%);
+}
+/*# sourceMappingURL=style.css.map */

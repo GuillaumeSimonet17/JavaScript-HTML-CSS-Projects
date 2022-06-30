@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+$font1: 'Inter', sans-serif;
+$font2: 'Merriweather', serif;
+
+$color-grey: rgba(82, 82, 82, 0.22);
+
+
+@mixin title {
+    font-family: $font1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+*{
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../images/bg.jpg) center/cover fixed;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    font-family: $font2;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    &:before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: -1;
+        animation: animbefore 1.3s ease forwards;
+        @keyframes animbefore {
+            to{
+                opacity: 0;
+            }
+        }
+    }
+}
+
+button {
+    cursor: pointer;
+    text-transform: uppercase;
+    background: white;
+    padding: 10px 25px;
+    border: 1px solid black;
+    @include title;
+}
+span{
+    color: rgba(39, 39, 39, 0.627);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a, a:visited{
+    color: white;
+}

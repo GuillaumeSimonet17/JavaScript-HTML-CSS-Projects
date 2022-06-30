@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+*{
+    /* border: 1px solid red; */
+}
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+ul{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    /* width: 600px; */
+    width: 50%;
+}
+
+h1{
+    font-size: 4em;
+}
+h5{
+    font-size: 1.4em;
+    color: rgb(81,85,253);
+}
+.right{
+    width: 50%;
+    justify-content: right;
+    display: flex;
+}
+.main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+
+
+.footer{
+    margin: 0  auto; 
+    display: flex;
+    width: 97%;
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.footer-right{
+    width: 100%;
+}
+
+.btn > p{
+    background-color: rgb(81,85,253);
+    border-radius: 30px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+.footer-left > p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 3.3%;
+}
+
+.logo > img {
+    width: 90px;
+
+}
+
+.footer-right > p {
+    text-align: left;
+    font-size: 1.1em;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 1320px){
+    ul{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+    .main{
+        width: 70%;
+        min-width: 400px;
+
+    }
+    .left > p{
+        font-size: 0.8em;
+    }
+    .logo{
+        width: 100%;
+    }
+
+    .footer-right > p {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    li{
+        font-size: 0.8em;
+    }
+    .container{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .left{
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .right{
+        width: 100%;
+        align-items: center;
+        margin: 30px auto;
+    }
+    .logo{
+        width: 100%;
+    }
+    .footer{
+        margin-top: 10px;
+        width: 400px;
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-left{
+        display: block;
+        width: 400px;
+        text-align: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer-right > p {
+        text-align: center;
+        margin-left: 0;
+    }
+    .footer-left > .btn {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 28%;
+        
+    }
+
+}

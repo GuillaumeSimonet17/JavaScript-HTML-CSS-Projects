@@ -1,0 +1,41 @@
+
+body {
+  margin: 0;
+border: 5px solid white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "i1 i1 i2"
+  "i4 i3 i2"
+  "i4 i5 i5"
+  ;
+}
+
+div:nth-child(1) {
+  background: yellow;
+  grid-area: i1;
+  border: 5px solid white;
+
+}
+div:nth-child(2) {
+  background: purple;
+  grid-area: i2;
+  border: 5px solid white;
+}
+div:nth-child(3) {
+  background: green;
+  grid-area: i3;
+  border: 5px solid white;
+}
+div:nth-child(4) {
+  background: red;
+  grid-area: i4;
+  border: 5px solid white;
+}
+div:nth-child(5) {
+  background: orchid;
+  grid-area: i5;
+  border: 5px solid white;
+}

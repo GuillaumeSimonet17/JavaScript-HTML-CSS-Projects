@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    animation: anime 5s linear infinite;
+    @keyframes anime {
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        100%{
+            filter: hue-rotate(360deg);
+        }
+    }
+    span{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        // background: black;
+        border-radius: 50%;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            background-color: red;
+            box-shadow: 
+                        0 0 10px red,
+                        0 0 20px red,
+                        0 0 40px red,
+                        0 0 60px red,
+                        0 0 80px red,
+                        0 0 100px red;
+            border-radius: 50%;
+            transition: 2s;
+            transform: scale(0);
+        }
+        &:hover::before{
+            transition: 0s;
+            transform: scale(1);
+        }
+    }
+}

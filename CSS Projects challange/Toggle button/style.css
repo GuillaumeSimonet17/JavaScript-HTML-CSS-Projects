@@ -1,0 +1,232 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.7s ease;
+}
+input{
+    display: none;
+}
+label{
+    width: 170px;
+}
+.p{
+    margin: 0;
+}
+input.toggle + label{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+input.toggle + label::before{
+    content: "";
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 2em;
+    width: 4em;
+    background-color: rgb(221, 221, 221);
+    border-radius: 1em;
+    margin-right: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+input.toggle:checked + label::before{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(0, 0, 0);
+}
+
+input.toggle + label::after{
+    content: "";
+    left: .06em;
+    height: .9em;
+    width: .9em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    position: absolute;
+    transition: 0.3s ease;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(255, 253, 253, 0.86) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+input.toggle:checked + label::after{
+    left: 1.04em;
+
+}
+input.toggle:checked + label{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* ********************************************************* */
+
+
+
+
+input.toggle1 + label.check1{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+input.toggle1 + label.check1::before{
+    content: "OFF";
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 0.2em;
+    height: 2em;
+    width: 3.8em;
+    background-color: rgb(221, 221, 221);
+    border-radius: 1em;
+    margin-right: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+input.toggle1:checked + label.check1::before{
+    content: "ON";
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(0, 0, 0);
+}
+
+input.toggle1 + label.check1::after{
+    content: "";
+    left: .06em;
+    height: .9em;
+    width: .9em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    position: absolute;
+    transition: 0.3s ease;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(255, 253, 253, 0.86) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+input.toggle1:checked + label.check1::after{
+    left: 1.15em;
+
+}
+input.toggle1:checked + label.check1{
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* ********************************************************* */
+
+
+
+
+input.toggle2 + label.check2{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+input.toggle2 + label.check2::before{
+    content: "";
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 2em;
+    width: 4em;
+    background-color: rgb(221, 221, 221);
+    border-radius: 1em;
+    margin-right: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+input.toggle2:checked + label.check2::before{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(68, 149, 255);
+}
+
+input.toggle2 + label.check2::after{
+    content: "";
+    left: .06em;
+    height: .9em;
+    width: .9em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    position: absolute;
+    transition: 0.3s ease;
+    box-shadow: rgba(255, 253, 253, 0.86) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+input.toggle2:checked + label.check2::after{
+    left: 1.04em;
+
+}
+input.toggle2:checked + label.check2{
+    color: rgb(68, 149, 255);
+}
+
+
+/* ********************************************************* */
+
+label.check3{
+    font-size: 1em;
+    color: grey;
+}
+
+input.toggle3 + label.check3{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+input.toggle3 + label.check3::before{
+    content: "";
+    font-size: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 2em;
+    width: 4em;
+    background-color: rgb(221, 221, 221);
+    border-radius: 1em;
+    margin-right: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+input.toggle3:checked + label.check3::before{
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: rgb(68, 149, 255);
+}
+
+input.toggle3 + label.check3::after{
+    content: "";
+    left: .06em;
+    height: .9em;
+    width: .9em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    position: absolute;
+    transition: 0.3s ease;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(255, 253, 253, 0.86) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+input.toggle3:checked + label.check3::after{
+    left: 1.04em;
+}
+
+input.toggle3:checked + label.check3{
+    color: rgb(255, 255, 255);
+}

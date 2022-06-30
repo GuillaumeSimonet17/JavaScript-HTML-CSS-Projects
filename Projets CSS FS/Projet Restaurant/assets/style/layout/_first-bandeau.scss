@@ -1,0 +1,55 @@
+.first-bandeau{
+    display: flex;
+    height: 500px;
+    padding: 20px;
+    @media screen and (max-width: 500px) {
+        display: block;
+       
+    }
+    .left{
+        width: 50%;
+        height: 100%;
+        border: 1px dashed $color1;
+
+        @media screen and (max-width: 500px) {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .left-container{
+            padding: 20px;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h4{
+                font-size: 2em;
+                height: 30px;
+            }
+            
+            .img{   
+                img{
+                    // margin-top: 35px;
+                    border-radius: 50%;
+                    width: 90px;
+                }
+            }
+            h5{
+                margin-top: 5px;
+                font-size: 1.3em;
+            }
+            h6{
+                color: $color2;
+            }
+        }
+    }
+    .right{
+        width: 50%;
+        background: url(../../../assets/img/store-01.jpg) bottom/cover ;
+
+    
+    }
+}
